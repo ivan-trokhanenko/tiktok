@@ -6,7 +6,7 @@ use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\RequestException;
 
 /**
- * Class Tiktok
+ * Class Tiktok.
  *
  * @package Drupal\tiktok
  */
@@ -40,7 +40,7 @@ class Tiktok implements TiktokInterface {
         ],
         'query' => [
           'url' => $url,
-        ]
+        ],
       ]);
       return json_decode($request->getBody(), TRUE);
     }

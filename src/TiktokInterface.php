@@ -3,7 +3,7 @@
 namespace Drupal\tiktok;
 
 /**
- * Interface TiktokInterface
+ * Interface TiktokInterface.
  *
  * @package Drupal\tiktok
  */
@@ -15,9 +15,10 @@ interface TiktokInterface {
    * Convert a TikTok's video URL into embedded video markup.
    *
    * @param string $url
-   *   The video link for embedding
+   *   The video link for embedding.
    *
    * @return array|null
+   *   The response data.
    *
    * @see https://developers.tiktok.com/doc/Embed
    */
