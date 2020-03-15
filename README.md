@@ -10,12 +10,18 @@ CONTENTS OF THIS FILE
 
 INTRODUCTION
 ------------
-TODO.
+This module provides tiktok.api service that contains method 
+for getting Embed videos by URL from TikTok.
+
+How to use:
+```php
+$result = \Drupal::service('tiktok.api')->getEmbed('https://www.tiktok.com/@scout2015/video/6718335390845095173');
+```
    
 
 REQUIREMENTS
 ------------
-None.
+PHP 7.
 
 
 INSTALLATION
