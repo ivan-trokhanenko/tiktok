@@ -1,5 +1,5 @@
 name: 'TikTok'
 type: module
-description: 'TikTok Drupal 8 Inegration'
+description: 'Provides custom tiktok.api service for Drupal 8.'
 package: Custom
 core: 8.x
