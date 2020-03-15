@@ -1,0 +1,4 @@
+services:
+  tiktok.api:
+    class: Drupal\tiktok\Tiktok
+    arguments: ['@http_client']

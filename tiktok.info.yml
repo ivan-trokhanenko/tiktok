@@ -1,0 +1,5 @@
+name: 'TikTok'
+type: module
+description: 'TikTok Drupal 8 Inegration'
+package: Custom
+core: 8.x
