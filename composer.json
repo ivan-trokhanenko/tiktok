@@ -2,7 +2,7 @@
   "name": "drupal/tiktok",
   "type": "drupal-module",
   "description": "TikTok Drupal 8 Inegration.",
-  "homepage": "",
+  "homepage": "https://github.com/ivan-trokhanenko/tiktok",
   "license": "GPL-2.0+",
   "authors": [
     {
