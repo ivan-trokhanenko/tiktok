@@ -3,6 +3,7 @@
 namespace Drupal\tiktok;
 
 use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\RequestException;
 
 /**
  * Class Tiktok
@@ -31,19 +32,19 @@ class Tiktok implements TiktokInterface {
   /**
    * {@inheritdoc}
    */
-  public function getEmbed($url) {
+  public function getEmbed(string $url) {
     try {
       $request = $this->httpClient->request('GET', self::ENDPOINT . '/oembed', [
         'headers' => [
           'Content-Type' => 'application/json',
         ],
         'query' => [
-          'url' => $url
+          'url' => $url,
         ]
       ]);
       return json_decode($request->getBody(), TRUE);
     }
-    catch (\Exception $e) {
+    catch (RequestException $e) {
       watchdog_exception('tiktok', $e);
     }
     return NULL;

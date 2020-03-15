@@ -17,10 +17,10 @@ interface TiktokInterface {
    * @param string $url
    *   The video link for embedding
    *
-   * @return mixed
+   * @return array|null
    *
    * @see https://developers.tiktok.com/doc/Embed
    */
-  public function getEmbed($url);
+  public function getEmbed(string $url);
 
 }
